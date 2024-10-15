@@ -1,27 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components {
+  .button {
+    @apply py-3 px-7
+    bg-tea text-paper
+    inline-flex items-center justify-center
+    rounded-md
+    text-center text-base font-medium
+    hover:bg-cookie;
+  }
+
+  .button--outlined {
+    @apply button
+    bg-transparent text-kenya
+    border-2 border-tea
+    hover:text-cream hover:border-transparent;
+  }
+
+  .input {
+    @apply py-3 px-3
+    bg-frappe text-paper
+    rounded-md
+    text-base font-medium
+    hover:bg-coffee;
   }
 }
