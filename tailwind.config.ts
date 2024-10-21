@@ -9,21 +9,27 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      sans: ['"Kumbh Sans"', 'system-ui', 'sans-serif'],
+      sans: ['inter', 'system-ui', 'sans-serif'],
     },
     extend: {
+      screens: {
+        '2xl': '',
+      },
       colors: {
-        cream: '#F8F8E6',
-        milky: '#FBFBF2',
-        paper: '#FFFFFD',
         kenya: '#2C2A26',
         cookie: '#423F38',
         tea: '#514D45',
         coffee: '#6E695E',
         frappe: '#847E71',
+        cream: '#F8F8E6',
+        milky: '#FBFBF2',
+        paper: '#FFFFFD',
       },
       borderWidth: {
         px: '1px',
+      },
+      aspectRatio: {
+        poster: '4/3',
       },
     },
   },
