@@ -22,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-cream text-tea min-h-dvh">{children}</body>
+      <body className="bg-cream text-tea min-h-dvh flex flex-col">
+        {children}
+      </body>
     </html>
   )
 }
