@@ -1,11 +1,10 @@
-// import Image from 'next/image'
 import { Product } from '@interfaces/interfaces'
 import Link from 'next/link'
 
 export default function ProductCard({ data }: { data: Product }) {
   const thumbnail = data.thumbnail.replace(
     'http://localhost:9000',
-    process.env.NEXT_BACKEND_URL as string
+    process.env.NEXT_PUBLIC_MEDUSA_URL as string
   )
 
   return (
