@@ -1,3 +1,4 @@
+import Footer from '@modules/Footer'
 import Navigation from '@modules/Navigation'
 
 export default function RootLayout({
@@ -8,8 +9,8 @@ export default function RootLayout({
   return (
     <>
       <Navigation />
-      {children}
-      {/* Footer */}
+      <main className="flex-1">{children}</main>
+      <Footer />
     </>
   )
 }

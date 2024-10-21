@@ -1,10 +1,10 @@
 import HeroBanner from '@modules/HeroBanner'
 import ProductsBox from '@modules/ProductsBox'
-import { categories } from '@data/static'
+import { categoriesData } from '@data/static'
 import { featuredProductsData, trendingToysData } from '@data/dynamic'
 
 export default async function Home() {
-  const featuredCategories = categories
+  const featuredCategories = categoriesData
   const featuredProducts = await featuredProductsData()
   const trendingToys = await trendingToysData()
 
